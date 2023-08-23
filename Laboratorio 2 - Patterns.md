@@ -21,14 +21,14 @@ Busque cómo ejecutar desde línea de comandos el objetivo "generate" del plugin
 ```yml
 Grupo: edu.eci.cvds
 Id del Artefacto: Patterns
-Paquete: edu.eci.cvds.patterns
-archetype ArtifactId: maven-archetype-quickstart
+Paquete: edu.eci.cvds.patterns.archetype
+ArtifactId: maven-archetype-quickstart
 ```
 
 Se debió haber creado en el directorio, un nuevo proyecto `Patterns` a partir de un modelo o arquetipo, que crea un conjunto de directorios con un conjunto de archivos básicos.
 
 Cambie al directorio `Patterns`:
-```bash
+```sh
 $ cd Patterns
 ```
 
@@ -37,8 +37,8 @@ Para ver elconjunto de archivos y directorioscreados por el comando `mvn` ejecut
 $ tree
 ```
 
-En algunos sistemas operativos, este comando no funciona correctamente o puede requerir un parámetro (por ejemplo: tree /f). En caso que funcione, la
-salida muestra la estructura del proyecto,similar a como se muestra a continuación:
+En algunos sistemas operativos, este comando no funciona correctamente o puede requerir un parámetro (por ejemplo: `tree /f`). En caso que funcione, la
+salida muestra la estructura del proyecto, similar a como se muestra a continuación:
 ```sh
 .
 │ pom.xml
@@ -84,20 +84,28 @@ $ mvn -U package
 ```
 
 Busque cuál es el objetivo del parámetro "package" y qué otros parámetros se podrían enviar al comando `mvn`.
-Busque cómo ejecutar desde línea de comandos, un proyecto maven y verifique la salida cuando se ejecuta con la clase `App.java` como parámetro en
-"mainClass". Tip: https://www.mojohaus.org/exec-maven-plugin/usage.html
 
-Realice el cambio en la clase `App.java` para crear un saludo personalizado, basado en los parámetros de entrada a la aplicación. Utilizar la primera posición del parámetro que llega al método "main" para realizar elsaludo personalizado, en caso que no sea posible, se debe mantener el saludo como se encuentra actualmente:
+Busque cómo ejecutar desde línea de comandos, un proyecto maven y verifique la salida cuando se ejecuta con la clase `App.java` como parámetro en "mainClass". Tip: https://www.mojohaus.org/exec-maven-plugin/usage.html
+
+Realice el cambio en la clase `App.java` para crear un saludo personalizado, basado en los parámetros de entrada a la aplicación. 
+
+Utilizar la primera posición del parámetro que llega al método "main" para realizar elsaludo personalizado, en caso que no sea posible, se debe mantener el saludo como se encuentra actualmente:
 
 Buscar cómo enviar parámetros al plugin "exec".
+
 Ejecutar nuevamente la clase desde línea de comandos y verificar la salida: Hello World!
+
 Ejecutar la clase desde línea de comandos enviando su nombre como parámetro y verificar la salida. Ej: Hello Pepito!
+
 Ejecutar la clase con su nombre y apellido como parámetro.¿Qué sucedió?
-Verifique cómo enviar los parámetros de forma "compuesta" para que elsaludo se realice con nombre y apellido.
+
+Verifique cómo enviar los parámetros de forma "compuesta" para que el saludo se realice con nombre y apellido.
+
 Ejecutar nuevamente y verificar la salida en consola. Ej: Hello Pepito Perez!
 
 ## HACER EL ESQUELETO DE LA APLICACIÓN
 Cree el paquete `edu.eci.cvds.patterns.shapes` y el paquete `edu.eci.cvds.patterns.shapes.concrete`.
+
 Cree una interfaz llamada `Shape.java` en el directorio `src/main/java/edu/eci/cvds/patterns/shapes` de la siguiente manera:
 ```java
 package edu.eci.cvds.patterns.shapes;
@@ -132,21 +140,31 @@ public class Triangle implements Shape {
 Cree el archivo `ShapeMain.java` en el directorio `src/main/java/edu/eci/cvds/patterns/shapes` con el metodo main:
 ```java
 package edu.eci.cvds.patterns.shapes;
+
 public class ShapeMain {
-public static void main(String[] args) {
-if (args == null || args.length != 1) {
-System.err.println("Parameter of type RegularShapeType is required.");
-return;
-}
-try {
-RegularShapeType type = RegularShapeType.valueOf(args[0]);
-Shape shape = ShapeFactory.create(type);
-System.out.println(String.format("Successfully created a %s with %s sides.", type,
-shape.getNumberOfEdges()));
-} catch (IllegalArgumentException ex) {
-System.err.println("Parameter '" + args[0] + "' is not a valid RegularShapeType"); return;
-}
-}
+
+  public static void main(String[] args) {
+    if (args == null || args.length != 1) {
+      System.err.println("Parameter of type RegularShapeType is required.");
+      return;
+    }
+    try {
+      RegularShapeType type = RegularShapeType.valueOf(args[0]);
+      Shape shape = ShapeFactory.create(type);
+      System.out.println(
+        String.format(
+          "Successfully created a %s with %s sides.",
+          type,
+          shape.getNumberOfEdges()
+        )
+      );
+    } catch (IllegalArgumentException ex) {
+      System.err.println(
+        "Parameter '" + args[0] + "' is not a valid RegularShapeType"
+      );
+      return;
+    }
+  }
 }
 ```
 
@@ -154,20 +172,20 @@ Analice y asegúrese de entender cada una de las instrucciones que se encuentran
 instrucción switch-case de Java y usando las enumeraciones.
 
 Ejecute múltiples vecesla clase ShapeMain, usando el plugin exec de maven con lossiguientes parámetros y verifique la salida en consola para cada una:
-```
+```yml
 Sin parámetros
 Parámetro: qwerty
 Parámetro: pentagon
-ParámetroHexagon
+Parámetro: Hexagon
 ```
 
 ¿Cuál(es) de las anteriores instrucciones se ejecutan y funcionan correctamente y por qué?
 
 ## ENTREGAR
-- Se espera al menos que durante la sesión de laboratorio, se termine el ejercicio delsaludo y haya un avance del ejercicio de las figuras.
+- Se espera al menos que durante la sesión de laboratorio, se termine el ejercicio del saludo y haya un avance del ejercicio de las figuras.
 Dentro del directorio del proyecto,cree un archivo de texto integrantes.txt con el nombre de los dosintegrantes del taller.
-- Crear un repositorio para este proyecto y agregar la url del mismo,como entrega del laboratorio.
-- Enviar un correo a ivan.lemus@escuelaing.edu.co con la URL de su repositorio antes delcomienzo del otro laboratorio.
+- Crear un repositorio para este proyecto y agregar la url del mismo, como entrega del laboratorio.
+- Enviar un correo a ivan.lemus@escuelaing.edu.co con la URL de su repositorio antes del comienzo del otro laboratorio.
 - NOTA: Investigue para qué sirve "gitignore" y cómo se usa. Para futuras entregas, debe estar configurado.
 
 <!-- https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax -->
