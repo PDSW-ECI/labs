@@ -3,9 +3,18 @@
 #### TALLER 2
 ##### PATTERNS - FACTORY
 
+## PRERREQUISITOS
+- Java OpenJDK Runtime Environment: 17.x.x
+- Apache Maven: 3.9.x
+
+## OBJETIVOS
+1. Entender qué es Maven
+2. Usar comandos de construcción, compilación de un proyecto usando Maven
+3. Obtener puntos adicionales por PR corrigiendo los laboratorios
+
 ## LA HERRAMIENTA MAVEN
-La herramienta [Apache Maven](https://maven.apache.org/what-is-maven.html) se usa para gestionar y manejar proyectos de software. La base de maven para un proyecto es elconcepto de un modelo de
-objeto de proyecto (POM), Maven puede gestionar la compilación, losinformes y la documentación de un proyecto a partir de este modelo, que se concreta en el archivo `pom.xml`.
+La herramienta [Apache Maven](https://maven.apache.org/what-is-maven.html) se usa para gestionar y manejar proyectos de software. La base de maven para un proyecto es el concepto de un modelo de
+objeto de proyecto (POM), Maven puede gestionar la compilación, los informes y la documentación de un proyecto a partir de este modelo, que se concreta en el archivo `pom.xml`.
 
 Ingresar a la página de la herramienta y entender:
 - Cuál es su mayor utilidad
@@ -17,12 +26,13 @@ Ingresar a la página de la herramienta y entender:
 ## EJERCICIO DE LAS FIGURAS
 ### CREAR UN PROYECTO CON MAVEN
 Buscar cómo se crea un proyecto maven con ayuda de los arquetipos (archetypes).
-Busque cómo ejecutar desde línea de comandos el objetivo "generate" del plugin "archetype",con los siguientes parámetros:
+
+Busque cómo ejecutar desde línea de comandos el objetivo "generate" del plugin "archetype", con los siguientes parámetros:
 ```yml
-Grupo: edu.eci.cvds
+ProjectId: org.apache.maven.archetypes:maven-archetype-quickstart:1.0
+Id del Grupo: edu.eci.cvds
 Id del Artefacto: Patterns
 Paquete: edu.eci.cvds.patterns.archetype
-ArtifactId: maven-archetype-quickstart
 ```
 
 Se debió haber creado en el directorio, un nuevo proyecto `Patterns` a partir de un modelo o arquetipo, que crea un conjunto de directorios con un conjunto de archivos básicos.
@@ -32,7 +42,7 @@ Cambie al directorio `Patterns`:
 $ cd Patterns
 ```
 
-Para ver elconjunto de archivos y directorioscreados por el comando `mvn` ejecute el comando `tree`.
+Para ver el conjunto de archivos y directorios creados por el comando `mvn` ejecute el comando `tree`.
 ```sh
 $ tree
 ```
@@ -78,7 +88,7 @@ Para compilar ejecute el comando:
 $ mvn package
 ```
 
-Si maven no actualiza las dependencias utilice la opción `-U` asi:
+Si maven no actualiza las dependencias utilice la opción `-U` así:
 ```sh
 $ mvn -U package
 ```
@@ -97,7 +107,7 @@ Ejecutar nuevamente la clase desde línea de comandos y verificar la salida: Hel
 
 Ejecutar la clase desde línea de comandos enviando su nombre como parámetro y verificar la salida. Ej: Hello Pepito!
 
-Ejecutar la clase con su nombre y apellido como parámetro.¿Qué sucedió?
+Ejecutar la clase con su nombre y apellido como parámetro. ¿Qué sucedió?
 
 Verifique cómo enviar los parámetros de forma "compuesta" para que el saludo se realice con nombre y apellido.
 
@@ -109,31 +119,34 @@ Cree el paquete `edu.eci.cvds.patterns.shapes` y el paquete `edu.eci.cvds.patter
 Cree una interfaz llamada `Shape.java` en el directorio `src/main/java/edu/eci/cvds/patterns/shapes` de la siguiente manera:
 ```java
 package edu.eci.cvds.patterns.shapes;
+
 public interface Shape {
-  public int getNumberOfEdges();
+    public int getNumberOfEdges();
 }
 ```
 
-Cree una enumeración llamada `RegularShapeType.java` en el directorio `src/main/java/edu/eci/cvds/patterns/shapes`
-así: 
+Cree una enumeración llamada `RegularShapeType.java` en el directorio `src/main/java/edu/eci/cvds/patterns/shapes` así:
 
 ```java
 package edu.eci.cvds.patterns.shapes;
+
 public enum RegularShapeType {
-  Triangle, Quadrilateral, Pentagon, Hexagon
+    Triangle, Quadrilateral, Pentagon, Hexagon
 }
 ```
 
-En el directorio `src/main/java/edu/eci/cvds/patterns/shapes/concrete` cree las diferentesclases(Triangle, Quadrilateral, Pentagon,
-Hexagon), que implementen la interfaz creada y retornen el número correspondiente de vértices que tiene la figura. Siguiendo el ejemplo del triangulo:
+En el directorio `src/main/java/edu/eci/cvds/patterns/shapes/concrete` cree las diferentes clases (Triangle, Quadrilateral, Pentagon, Hexagon), que implementen la interfaz creada y retornen el número correspondiente de vértices que tiene la figura. 
 
+Siguiendo el ejemplo del triángulo:
 ```java
 package edu.eci.cvds.patterns.shapes.concrete;
+
 import edu.eci.cvds.patterns.shapes.Shape;
+
 public class Triangle implements Shape {
-  public int getNumberOfEdges() {
-    return 3;
-  }
+    public int getNumberOfEdges() {
+        return 3;
+    }
 }
 ```
 
@@ -168,10 +181,9 @@ public class ShapeMain {
 }
 ```
 
-Analice y asegúrese de entender cada una de las instrucciones que se encuentran en todas las clases que se crearon anteriormente. Cree el archivo `ShapeFactory.java` en el directorio `src/main/java/edu/eci/cvds/patterns/shapes` implementando el patrón fábrica, haciendo uso de la
-instrucción switch-case de Java y usando las enumeraciones.
+Analice y asegúrese de entender cada una de las instrucciones que se encuentran en todas las clases que se crearon anteriormente. Cree el archivo `ShapeFactory.java` en el directorio `src/main/java/edu/eci/cvds/patterns/shapes` implementando el patrón fábrica, haciendo uso de la instrucción switch-case de Java y usando las enumeraciones.
 
-Ejecute múltiples vecesla clase ShapeMain, usando el plugin exec de maven con lossiguientes parámetros y verifique la salida en consola para cada una:
+Ejecute múltiples veces la clase ShapeMain, usando el plugin exec de maven con los siguientes parámetros y verifique la salida en consola para cada una:
 ```yml
 Sin parámetros
 Parámetro: qwerty
