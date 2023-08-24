@@ -3,13 +3,13 @@
 #### TALLER 2
 ##### PATTERNS - FACTORY
 
-## PRERREQUISITOS
+## PRE-RREQUISITOS
 - Java OpenJDK Runtime Environment: 17.x.x
 - Apache Maven: 3.9.x
 
 ## OBJETIVOS
 1. Entender qué es Maven
-2. Usar comandos de construcción, compilación de un proyecto usando Maven
+2. Usar comandos de generación de arquetipos, compilación y ejecuciónde un proyecto usando Maven
 3. Obtener puntos adicionales por PR corrigiendo los laboratorios
 
 ## LA HERRAMIENTA MAVEN
