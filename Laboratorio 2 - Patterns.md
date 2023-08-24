@@ -181,7 +181,18 @@ public class ShapeMain {
 }
 ```
 
-Analice y asegúrese de entender cada una de las instrucciones que se encuentran en todas las clases que se crearon anteriormente. Cree el archivo `ShapeFactory.java` en el directorio `src/main/java/edu/eci/cvds/patterns/shapes` implementando el patrón fábrica, haciendo uso de la instrucción switch-case de Java y usando las enumeraciones.
+Analice y asegúrese de entender cada una de las instrucciones que se encuentran en todas las clases que se crearon anteriormente. Cree el archivo `ShapeFactory.java` en el directorio `src/main/java/edu/eci/cvds/patterns/shapes` implementando el patrón fábrica (Hint: https://refactoring.guru/design-patterns/catalog), haciendo uso de la instrucción switch-case de Java y usando las enumeraciones.
+
+¿Cuál fábrica hiciste? y ¿Cuál es mejor?
+- Simple Factory:
+
+![imagen](https://github.com/PDSW-ECI/labs/assets/4140058/2e544c34-0dce-40db-b054-52186d51884c)
+- Factory Method:
+
+![imagen](https://github.com/PDSW-ECI/labs/assets/4140058/58a9d6d7-9b94-4816-b626-ba720460acd5)
+- Abstract Factory:
+
+![imagen](https://github.com/PDSW-ECI/labs/assets/4140058/98e1f645-ddc5-4db4-b28a-41d0f385ddbc)
 
 Ejecute múltiples veces la clase ShapeMain, usando el plugin exec de maven con los siguientes parámetros y verifique la salida en consola para cada una:
 ```yml
