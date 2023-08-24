@@ -206,7 +206,7 @@ Parámetro: Hexagon
 
 ## ENTREGAR
 - Se espera al menos que durante la sesión de laboratorio, se termine el ejercicio del saludo y haya un avance del ejercicio de las figuras.
-Dentro del directorio del proyecto,cree un archivo de texto integrantes.txt con el nombre de los dosintegrantes del taller.
+Dentro del directorio del proyecto, cree un archivo de texto integrantes.txt con el nombre de los dos integrantes del taller.
 - Crear un repositorio para este proyecto y agregar la url del mismo, como entrega del laboratorio.
 - Enviar un correo a ivan.lemus@escuelaing.edu.co con la URL de su repositorio antes del comienzo del otro laboratorio.
 - NOTA: Investigue para qué sirve "gitignore" y cómo se usa. Para futuras entregas, debe estar configurado.
