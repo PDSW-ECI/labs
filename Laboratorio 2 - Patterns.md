@@ -186,13 +186,14 @@ Analice y asegúrese de entender cada una de las instrucciones que se encuentran
 ¿Cuál fábrica hiciste? y ¿Cuál es mejor?
 - Simple Factory:
 
-![imagen](https://github.com/PDSW-ECI/labs/assets/4140058/2e544c34-0dce-40db-b054-52186d51884c)
+![imagen](https://github.com/PDSW-ECI/labs/assets/4140058/0788a0b7-a071-4b90-ac3f-5982289ff3b3)
+
 - Factory Method:
 
-![imagen](https://github.com/PDSW-ECI/labs/assets/4140058/58a9d6d7-9b94-4816-b626-ba720460acd5)
+![imagen](https://github.com/PDSW-ECI/labs/assets/4140058/cd82548d-347b-4a10-88bd-2d203dac12bd)
 - Abstract Factory:
 
-![imagen](https://github.com/PDSW-ECI/labs/assets/4140058/98e1f645-ddc5-4db4-b28a-41d0f385ddbc)
+![imagen](https://github.com/PDSW-ECI/labs/assets/4140058/1c79a12b-21d4-46be-8f19-40f3b62b6af7)
 
 Ejecute múltiples veces la clase ShapeMain, usando el plugin exec de maven con los siguientes parámetros y verifique la salida en consola para cada una:
 ```yml
