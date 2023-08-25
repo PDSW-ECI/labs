@@ -9,12 +9,11 @@
 
 ## OBJETIVOS
 1. Entender qué es Maven
-2. Usar comandos de generación de arquetipos, compilación y ejecuciónde un proyecto usando Maven
-3. Obtener puntos adicionales por PR corrigiendo los laboratorios
+2. Usar comandos de generación de arquetipos, compilación y ejecución de un proyecto usando Maven
+3. Obtener puntos adicionales por PR qué corrijan o mejoren los laboratorios
 
 ## LA HERRAMIENTA MAVEN
-La herramienta [Apache Maven](https://maven.apache.org/what-is-maven.html) se usa para gestionar y manejar proyectos de software. La base de maven para un proyecto es el concepto de un modelo de
-objeto de proyecto (POM), Maven puede gestionar la compilación, los informes y la documentación de un proyecto a partir de este modelo, que se concreta en el archivo `pom.xml`.
+La herramienta [Apache Maven](https://maven.apache.org/what-is-maven.html) se usa para gestionar y manejar proyectos de software. La base de maven para un proyecto es el concepto de un modelo de objeto de proyecto (POM), Maven puede gestionar la compilación, los informes y la documentación de un proyecto a partir de este modelo, que se concreta en el archivo `pom.xml`.
 
 Ingresar a la página de la herramienta y entender:
 - Cuál es su mayor utilidad
@@ -196,12 +195,10 @@ Analice y asegúrese de entender cada una de las instrucciones que se encuentran
 ![imagen](https://github.com/PDSW-ECI/labs/assets/4140058/1c79a12b-21d4-46be-8f19-40f3b62b6af7)
 
 Ejecute múltiples veces la clase ShapeMain, usando el plugin exec de maven con los siguientes parámetros y verifique la salida en consola para cada una:
-```yml
-Sin parámetros
-Parámetro: qwerty
-Parámetro: pentagon
-Parámetro: Hexagon
-```
+- Sin parámetros
+- Parámetro: qwerty
+- Parámetro: pentagon
+- Parámetro: Hexagon
 
 ¿Cuál(es) de las anteriores instrucciones se ejecutan y funcionan correctamente y por qué?
 
