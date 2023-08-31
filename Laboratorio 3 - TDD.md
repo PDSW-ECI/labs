@@ -251,7 +251,7 @@ Piense en los casos de [equivalencia](https://prezi.com/-jp_rqhov1nn/particiones
 
 Complete la implementación de la clase `RegistryTest.java` con (al menos) un método por cada clase de equivalencia, creando diferentes personas y validando que el resultado sea el esperado.
 
-Complete la implementación del método `registerVoter` en la clase Registry.java para retornar el resultado esperado según la entrada.
+Complete la implementación del método `registerVoter` en la clase `Registry.java` para retornar el resultado esperado según la entrada.
 
 ## EJERCICIO "DESCUENTO DE TARIFAS"
 
@@ -274,7 +274,7 @@ Ejecute el comando de Maven para las fases de compilación y pruebas. Verifique 
 
 ## ENTREGAR
 - Crear un repositorio para este proyecto y agregar la url del mismo, como entrega del laboratorio.
-- Agregar y configurar el archivo .gitignore del repositorio para excluir la carpeta target y los archivos generados por el IDE que se haya usado. (ej. .classpath, .idea, .settings, etc.).
-- Agregar el nombre de los integrantes que realizaron el laboratorio. Puede ser en un archivo integrantes.txt o agregándolos en el archivo Readme del repositorio.
+- Agregar y configurar el archivo .gitignore del repositorio para excluir la carpeta target y los archivos generados por el IDE que se haya usado. (ej. `.classpath`, `.idea`, `.settings`, etc.).
+- Agregar el nombre de los integrantes que realizaron el laboratorio. Puede ser en un archivo `integrantes.txt` o agregándolos en el archivo `Readme` del repositorio.
 - Terminar el laboratorio antes de la próxima sesión de laboratorio.
 
