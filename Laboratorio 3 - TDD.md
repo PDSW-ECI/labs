@@ -1,4 +1,4 @@
-# LABORATORIO 3 - PBT
+# LABORATORIO 3 - TDD
 
 #### CLASES DE EQUIVALENCIA
 
@@ -247,11 +247,11 @@ $ mvn test
 Revise cual es la diferencia. Tip: https://www.devopsschool.com/blog/maven-tutorials-maven-lifecycle-phases-goal
 
 ### FINALIZAR EL EJERCICIO
-Piense en los casos de equivalencia que se pueden generar del ejercicio para la registraduría, dadas las condiciones. Deben ser al menos 5.
+Piense en los casos de [equivalencia](https://prezi.com/-jp_rqhov1nn/particiones-o-clases-de-equivalencia/) que se pueden generar del ejercicio para la registraduría dadas las condiciones. Deben ser al menos 5.
 
 Complete la implementación de la clase `RegistryTest.java` con (al menos) un método por cada clase de equivalencia, creando diferentes personas y validando que el resultado sea el esperado.
 
-Complete la implementación del método registerVoter en la clase Registry.java para retornar el resultado esperado según la entrada.
+Complete la implementación del método `registerVoter` en la clase Registry.java para retornar el resultado esperado según la entrada.
 
 ## EJERCICIO "DESCUENTO DE TARIFAS"
 
@@ -274,10 +274,7 @@ Ejecute el comando de Maven para las fases de compilación y pruebas. Verifique 
 
 ## ENTREGAR
 - Crear un repositorio para este proyecto y agregar la url del mismo, como entrega del laboratorio.
-- Agregar y configurar el archivo .gitignore del repositorio para excluir la carpeta target y los archivos generados por el IDE que se haya usado.
+- Agregar y configurar el archivo .gitignore del repositorio para excluir la carpeta target y los archivos generados por el IDE que se haya usado. (ej. .classpath, .idea, .settings, etc.).
+- Agregar el nombre de los integrantes que realizaron el laboratorio. Puede ser en un archivo integrantes.txt o agregándolos en el archivo Readme del repositorio.
+- Terminar el laboratorio antes de la próxima sesión de laboratorio.
 
-
-(ej. .classpath, .idea, .settings, etc.).
-Agregar el nombre de losintegrantes que realizaron el laboratorio. Puede ser en un archivo integrantes.txt o agregandolos en el archivo Readme
-del repositorio.
-Terminar el laboratorio antes de la próxima sesión de laboratorio.
