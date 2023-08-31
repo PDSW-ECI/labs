@@ -2,7 +2,7 @@
 
 #### CLASES DE EQUIVALENCIA
 
-## CREAR UNPROYECTO CON MAVEN
+### CREAR UN PROYECTO CON MAVEN
 En el directorio de trabajo ejecutar el comando necesario para crear/generar un proyecto maven basado en un arquetipo:
 ```yml
 Grupo (groupId): edu.eci.cvds
@@ -11,7 +11,7 @@ Paquete (package): edu.eci.cvds.tdd
 archetypeArtifactId: maven-archetype-quickstart
 ```
 
-### Actualizar y crear dependencias en el proyecto
+### ACTUALIZAR Y CREAR DEPENDENCIAS EN EL PROYECTO
 
 Busque en internet el repositorio central de maven.
 
@@ -30,7 +30,7 @@ Edite el archivo pom.xml y realice las siguientes actualizaciones:
 </properties>
 ```
 
-## COMPILAR Y EJECUTAR
+### COMPILAR Y EJECUTAR
 Ejecute los comandos necesarios de Maven, para compilar el proyecto y verificar que el proyecto se creó correctamente y los cambios realizados al archivo pom no generan inconvenientes.
 
 Busque el comando requerido para ejecutar las pruebas unitarias de un proyecto desde Maven y ejecútelo sobre el proyecto. Se debe ejecutar la clase AppTest con resultado exitoso.
@@ -200,54 +200,83 @@ public class Person {
     public String toString() {
         return "Person [name=" + name + ", id=" + id + ", age=" + age + ", gender=" + gender + ", alive=" + alive + "]"; }
 }
-
 ```
 
-Cree la misma estructura de paquetes edu.eci.cvds.tdd.registry en la ruta src/test/java. Todoslos archivosrelacionados específicamente con
-lostemas de pruebas,siempre deben ir bajo la carpeta test.
-Bajo la carpeta de pruebas,cree la clase RegistryTest.java en el directorio edu.eci.cvds.tdd.registry de la siguiente manera:
+Cree el archivo `Registry.java` en el directorio `edu.eci.cvds.tdd.registry` con el método `registerVoter`:
+```java
 package edu.eci.cvds.tdd.registry;
+public class Registry {
+    public RegisterResult registerVoter(Person p) {
+        // TODO Validate person and return real result.
+        return RegisterResult.VALID;
+    }
+}
+```
+
+Cree la misma estructura de paquetes `edu.eci.cvds.tdd.registry` en la ruta `src/test/java`. Todos los archivos relacionados específicamente con los temas de pruebas, siempre deben ir bajo la carpeta `test`.
+
+Bajo la carpeta de pruebas, cree la clase `RegistryTest.java` en el directorio `edu.eci.cvds.tdd.registry` de la siguiente manera:
+```java
+package edu.eci.cvds.tdd.registry;
+
 import org.junit.Assert;
 import org.junit.Test;
+
 public class RegistryTest {
-private Registry registry = new Registry();
-@Test
-public void validateRegistryResult() {
-Person person = new Person();
-RegisterResult result = registry.registerVoter(person);
-Assert.assertEquals(RegisterResult.VALID, result);
+    private Registry registry = new Registry();
+    @Test
+    public void validateRegistryResult() {
+        Person person = new Person();
+        RegisterResult result = registry.registerVoter(person);
+        Assert.assertEquals(RegisterResult.VALID, result);
+    }
+    // TODO Complete with more test cases
 }
-// TODO Complete with more test cases
-}
-EJECUTAR LAS PRUEBAS
-Para correr las pruebas utilice
+```
+
+### EJECUTAR LAS PRUEBAS
+
+Para correr las pruebas utilice:
+```sh
 $ mvn package
-Tambien puede utilizar:
+```
+También puede utilizar:
+```sh
 $ mvn test
-Revise cual esla diferencia.
-FINALIZAR EL EJERCICIO
-Piense en loscasos de equivalencia que se pueden generar del ejercicio para la registraduría, dadaslascondiciones. Deben ser al menos 5.
-Complete la implementación de la clase RegistryTest.java con (al menos) un método porcada clase de equivalencia,creando diferentes personas y
-validando que el resultado sea el esperado.
+```
+Revise cual es la diferencia. Tip: https://www.devopsschool.com/blog/maven-tutorials-maven-lifecycle-phases-goal
+
+### FINALIZAR EL EJERCICIO
+Piense en los casos de equivalencia que se pueden generar del ejercicio para la registraduría, dadas las condiciones. Deben ser al menos 5.
+
+Complete la implementación de la clase `RegistryTest.java` con (al menos) un método por cada clase de equivalencia, creando diferentes personas y validando que el resultado sea el esperado.
+
 Complete la implementación del método registerVoter en la clase Registry.java para retornar el resultado esperado según la entrada.
 
-EJERCICIO "DESCUENTO DE TARIFAS"
-REALIZAR DISEÑO DE PRUEBAS
-Para realizar de forma correcta el diseño de sus pruebasresponda las preguntas que se encuentran en elsiguiente documento.
-IMPLEMENTACIÓNDE LAS PRUEBAS
-Descargue el archivo aerodescuentos.jar y adicione esta nueva dependencia en el archivo pom.xml de su proyecto.
-Para adicionar una librería personalizada al repositorio local de maven puede ejecutar elsiguiente comando.
-$ mvn install:install-file -Dfile=aerodescuentos-1.0.0.jar -DgroupId=edu.eci.cvds -DartifactId=aerodescuentos -
-Dversion=1.0.0 -Dpackaging=jar
-Cree el archivo TarifasTest.java en el directorio src/test/java/edu/eci/cvds/tdd/aerodescuentos.
-Realice la implementación de las pruebas propuestas en la etapa de diseño de pruebas en esta clase. Para sus pruebas debe usar el método
-"calculoTarifa" de la clase edu.eci.cvds.tdd.aerodescuentos.CalculadorDescuentos, que se encuentran dentro del JAR de la librería
-personalizada.
-Ejecute elcomando de Maven para lasfases de compilación y pruebas. Verifique el resultado exitoso de todaslas pruebas y el reporte
-generado.
-ENTREGAR
-Crear un repositorio para este proyecto y agregar la url del mismo,como entrega del laboratorio.
-Agregar y configurar el archivo .gitignore del repositorio para excluir la carpeta target y los archivos generados por el IDE que se haya usado
+## EJERCICIO "DESCUENTO DE TARIFAS"
+
+### REALIZAR DISEÑO DE PRUEBAS
+Para realizar de forma correcta el diseño de sus pruebas responda las preguntas que se encuentran en el siguiente [documento](https://campusvirtual.escuelaing.edu.co/moodle/pluginfile.php/142929/mod_assign/intro/EjercicioClasesEquivalencia.pdf).
+
+### IMPLEMENTACIÓN DE LAS PRUEBAS
+Descargue el archivo [`aerodescuentos.jar`](https://campusvirtual.escuelaing.edu.co/moodle/pluginfile.php/142929/mod_assign/intro/aerodescuentos-1.0.0.jar) y adicione esta nueva dependencia en el archivo `pom.xml` de su proyecto.
+
+Para adicionar una librería personalizada al repositorio local de maven puede ejecutar el siguiente comando.
+```sh
+$ mvn install:install-file -Dfile=aerodescuentos-1.0.0.jar -DgroupId=edu.eci.cvds -DartifactId=aerodescuentos -Dversion=1.0.0 -Dpackaging=jar
+```
+
+Cree el archivo `TarifasTest.java` en el directorio `src/test/java/edu/eci/cvds/tdd/aerodescuentos`.
+
+Realice la implementación de las pruebas propuestas en la etapa de diseño de pruebas en esta clase. Para sus pruebas debe usar el método "calculoTarifa" de la clase `edu.eci.cvds.tdd.aerodescuentos.CalculadorDescuentos`, que se encuentran dentro del JAR de la librería personalizada.
+
+Ejecute el comando de Maven para las fases de compilación y pruebas. Verifique el resultado exitoso de todas las pruebas y el reporte generado.
+
+## ENTREGAR
+- Crear un repositorio para este proyecto y agregar la url del mismo, como entrega del laboratorio.
+- Agregar y configurar el archivo .gitignore del repositorio para excluir la carpeta target y los archivos generados por el IDE que se haya usado.
+
+
 (ej. .classpath, .idea, .settings, etc.).
 Agregar el nombre de losintegrantes que realizaron el laboratorio. Puede ser en un archivo integrantes.txt o agregandolos en el archivo Readme
 del repositorio.
