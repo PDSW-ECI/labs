@@ -87,7 +87,6 @@ https://jsonplaceholder.typicode.com/todos/1, puede guiarse de tutoriales como h
 Luego de terminada esta parte responda:
 - ¿Qué es RESTful?
 - Si utilizo un framework como [Boostrap CSS](https://getbootstrap.com/) para qué el apartado gráfico se vea más profesional, ¿en qué capa se haría su uso?
-- 
 
 ### PARTE IV. - APLICACIÓN MVC JUEGO
 ¡Llego la hora del reto! Teniendo las bases del uso del framework, cree una nueva ruta, por ejemplo `/guess`, y agrege formulario básico con un campo llamado "número" (guía de como crear formularios HTML https://www.w3schools.com/html/)
@@ -97,7 +96,7 @@ Y vamos a implementar la lógica de nuestro juego:
 se reduce en $10.000, como en los juegos de apuesta, es natural qué quede en saldos negativos.
 2. El número a adivinar debe ser generado en cada intento y comparado con el número qué el usuario está insertando, es un número de 1 a 10.
 3. Debe existir un botón de reset, qué permita al jugador iniciar de nuevo.
-4. La capa de controlador debe procer el número del usuario mediante método POST.
+4. La capa de controlador debe procer el número del usuario mediante método `POST`.
 
 Analice las siguientes situaciones:
 - ¿Qué pasa si abro el sitio de juegos en dos navegadores difententes?
