@@ -81,7 +81,7 @@ Después de terminar el aprendizaje analice:
 - ¿Qué anotaciones usaste y cuál es la diferencia entre ellas?
 
 ### PARTE III. - APLICACIÓN MVC PARA CONSUMO DE SERVICIO RESTful
-Usando la arquitectura MVC del punto , realice una aplicación simple qué permita navegar gráficamente sobre esta API
+Usando la arquitectura MVC del punto anterior (el proyecto anterior), realice una aplicación simple qué permita navegar gráficamente sobre esta API
 https://jsonplaceholder.typicode.com/todos/1, puede guiarse de tutoriales como https://medium.com/@nutanbhogendrasharma/consume-rest-api-in-spring-boot-web-application-354c404850f0
 
 Luego de terminada esta parte responda:
