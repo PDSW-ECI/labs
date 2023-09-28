@@ -30,17 +30,17 @@
 
 ### Continuous Integration - Activando la opción integración continua en el Pipeline.
 - Buscar en ADO los pipelines, y editar el pipeline de nuestro proyecto.
-- Activar elcheckbox de “continuous integration” en el menú Triggers. —> Guardar.
-- Ahora cuando hagamos un push,se ejecutará el pipeline de construcción de la nueva versión de nuestro proyecto.
+- Activar el checkbox de “continuous integration” en el menú Triggers. —> Guardar.
+- Ahora cuando hagamos un push, se ejecutará el pipeline de construcción de la nueva versión de nuestro proyecto.
 - Para desplegarlo, ir al Menu Releases y manualmente crear un release.
 - Luego de que sea exitoso podemos volver a probar nuestro sistema.
 
 ### Bugfixing - Solucionando un Bug
 - Revisar en qué parte está ubicada la información de la base de datos.
 - Revisa las propiedades de conexión del proyecto java a la base de datos.
-- Validarcualesson los datos de conexión correctos.
+- Validar cuales son los datos de conexión correctos.
 - Actualizar información de conexión a la BD en la clase.
-- Subir loscambios al repositorio remoto.
+- Subir los cambios al repositorio remoto.
 - Validar si ya funciona el ajuste.
 
 ## PARTE II. USANDO SPRING DATA DESDE CERO
