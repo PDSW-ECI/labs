@@ -1,6 +1,3 @@
-
-docker run -p 3306:3306 --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:latest
-
 # LABORATORIO 7 - Finalización CI/CD - Manejo de Data - ORM
 
 ## PARTE I. FINALIZACIÓN CI/CD
@@ -17,7 +14,7 @@ docker run -p 3306:3306 --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d
   - Volver a la página anterior y presionar en la opción Configure Logs.
   - Vamos a configurarlos de la siguiente manera:
     - Application logging: ON(Level: Error)
-    - Application login (Blob): OF
+    - Application login (Blob): OFF
     - Web server logging: File System
     - Quota 35 MB
     - Retention Period: 3
@@ -44,16 +41,18 @@ docker run -p 3306:3306 --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d
 - Validarcualesson los datos de conexión correctos.
 - Actualizar información de conexión a la BD en la clase.
 - Subir loscambios al repositorio remoto.
-- Validarsi ya funciona el ajuste.
+- Validar si ya funciona el ajuste.
 
 ## PARTE II. USANDO SPRING DATA DESDE CERO
 - Descargue el código de https://github.com/PDSW-ECI/spring-mvc-with-bootstrap
 - Ejecute el comando `docker run -p 3306:3306 --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:latest`
 - Descargar un cliente de base de datos: DBeaver
-- Crear el siguiente modelo, use como base la clase Configuration ya cread:
-- Cree una interfa CRUD
-
+- Crear el siguiente modelo, use como base la clase `Configuration.java` ya creada:
+<img width="529" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/fa8eb3a1-25bf-4d0d-98ea-e538ec85670c">
+- Cree una interfaz CRUD
 
 ## ENTREGA
 - CI/CD: La URL pública de su cuenta en la nube de Azure que apunte a la aplicación de MyShuttle. Se solicitará su activación para revisión.
 - DATA: URL del repositorio en github funcionando con una base de datos local.
+
+
