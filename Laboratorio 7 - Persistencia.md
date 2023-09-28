@@ -44,7 +44,7 @@
 - Validar si ya funciona el ajuste.
 
 Considere qué los datos de una base de datos siguen una forma similar a esta, sin embargo los datos no serán iguales:
-```json
+```java
   private static final String DB_DRIVER = "com.mysql.jdbc.Driver";
   private static final String DB_URL = "jdbc:mysql://mysqldbserver4.mysql.database.azure.com:3306/alm";
   private static final String DB_USER = "mysqldbuser@mysqldbserver4";
