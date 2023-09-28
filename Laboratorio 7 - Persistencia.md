@@ -43,6 +43,14 @@
 - Subir los cambios al repositorio remoto.
 - Validar si ya funciona el ajuste.
 
+Considere qué los datos de una base de datos siguen una forma similar a esta, sin embargo los datos no serán iguales:
+```json
+  private static final String DB_DRIVER = "com.mysql.jdbc.Driver";
+  private static final String DB_URL = "jdbc:mysql://mysqldbserver4.mysql.database.azure.com:3306/alm";
+  private static final String DB_USER = "mysqldbuser@mysqldbserver4";
+  private static final String DB_PASS = "P2ssw0rd@123";
+```
+
 ## PARTE II. USANDO SPRING DATA DESDE CERO
 - Descargue el código de https://github.com/PDSW-ECI/spring-mvc-with-bootstrap
 - Ejecute el comando `docker run -p 3306:3306 --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:latest`
