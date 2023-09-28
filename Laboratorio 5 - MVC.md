@@ -19,12 +19,12 @@ Revise el RFC del protocolo HTTP, sobre cómo realizar una petición GET.
 Debe lucir más o menos de esta forma:
 
 ```yml
-GET /this-is-the-url/with-a-resource.html HTTP/1.0
+GET /with-a-resource.html HTTP/1.0
 Host: www.escuelaing.edu.co
 ```
 
 Con esto, solicite al servidor el recurso `sssss/abc.html`, usando la versión 1.0 de HTTP.
-
+Copie las dos lineas de codigo con el recurso agregado y peguelas en la consola del servidor ya abierta.
 Asegúrese de presionar ENTER dos veces después de ingresar el comando.
 
 Revise el resultado obtenido.
