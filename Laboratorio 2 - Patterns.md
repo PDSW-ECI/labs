@@ -58,6 +58,7 @@ salida muestra la estructura del proyecto, similar a como se muestra a continuac
 │ └───eci
 │ └───cvds
 │ └───patterns
+  └───archetype
 │ App.java
 │
 └───test
@@ -66,6 +67,7 @@ salida muestra la estructura del proyecto, similar a como se muestra a continuac
 └───eci
 └───cvds
 └───patterns
+└───archetype
 AppTest.java
 ```
 
