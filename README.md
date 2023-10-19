@@ -8,4 +8,4 @@ Continuous Delivery Pipelines for Teaching Agile and Developing Software Enginee
 - [Laboratorio 5 - MVC](Laboratorio%205%20-%20MVC.md)
 - [Laboratorio 6 - Recapitulación](Laboratorio%206%20-%20Recapitulación.md)
 - [Laboratorio 7 - Persistencia](Laboratorio%207%20-%20Persistencia.md)
-- [Laboratorio 8]()
+- [Laboratorio 8 - CI/CD](Laboratorio%208%20-%20CI-CD.md)
