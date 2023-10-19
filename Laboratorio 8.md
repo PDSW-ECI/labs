@@ -16,7 +16,7 @@ Usando el mismo código del proyecto 7 (generar un repositorio nuevo), para hace
 - Dado que tengo 1 empleado registrado, Cuándo lo elimino a nivel de servicio, Entonces la eliminación será exitosa.
 - Dado que tengo 1 empleado registrado, Cuándo lo elimino y consulto a nivel de servicio, Entonces el resultado de la consulta no retornará ningún resultado.
 4) Verifica que la ejecución del **workflow** es exitosa, si no lo fuera, modifícalo hasta que ocurra
-### Desplegando en Azure usando CI/CD (Continous Deployment)
+### Desplegando en Azure usando CI/CD (Continous Deployment / Continous Delivery)
 5) En Azure crea un servicio de App Service con recursos que facturen 0 dólares
 6) Configura el **job deploy** que creaste en el paso 2 y usando el *action* **azure/webapps-deploy@v2** despliega el *jar* generado a tu servicio de App Service
 7) Verifica qué el endpoint de la aplicación generado en App Service
