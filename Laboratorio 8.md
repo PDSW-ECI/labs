@@ -20,7 +20,8 @@ Usando el mismo código del proyecto 7 (generar un repositorio nuevo), para hace
 7) Verifica qué el endpoint de la aplicación generado en App Service
 8) En este punto la aplicación no debería funcionar, ¿Donde puedes ver el mensaje de error de la aplicación o logs?, (probáblemente está fallando debido a que el puerto usado para despliegue no es el esperado (puerto 80), modifícalo en el **application.properties**)
 8) En este punto la aplicación no debería funcionar totalmente debido a qué no hay una base de datos preparada, debes verificar esta situación a través de los logs, crea una base de datos MySQL con facturación de 0 dólares
-9) Para utilizar la base de datos, configurando los datos de conexión como una o varias variables de entorno tanto en App Service como en el archivo **application.properties** de tu proyecto
+9) Para utilizar la base de datos, configura los datos de conexión como una o varias variables de entorno tanto en App Service como en el archivo **application.properties** de tu proyecto
+10) Prueba nuevamente la aplicación, ya debería estar funcionando! :fireworks: :champagne:
 
 ## PARTE II. GRÁFICOS
 ### Generación de datos por procedimientos
@@ -39,8 +40,5 @@ Recuerde la estructura:
 > Todas estas gráficas deberán ser debidamente rotuladas con su título, leyenda, etiquetas de ejes con sus unidades y tooltip sobre la serie de datos. Puede escoger entre gráficos de barras, líneas, pie, y sustente su elección.
 
 ## ENTREGA
-- CI/CD: La URL pública de su cuenta en la nube de Azure que apunte a la aplicación de MyShuttle. Se solicitará su activación para revisión.
+- CI/CD: La URL pública de la aplicación hasta la parte I, debe ser mostrada en el laboratorio, el profesor dará visto bueno sobre el README.md del repositorio.
 - DATA: URL del repositorio en github funcionando con una base de datos local.
-
-
-
