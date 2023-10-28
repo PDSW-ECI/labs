@@ -8,7 +8,7 @@ Usando el mismo código del proyecto 7 (generar un repositorio nuevo), para hace
 2) Configurar en github actions un **workflow** que contendrá 3 **jobs**, el primer **job** se llamará **build**, el segundo **test** y el tercero **deploy**, además, este workflow se disparará (events/trigger) **on: pull_request**, para esto puede usar como base [este tutorial](https://qaautomation.expert/2023/06/26/how-to-run-springboot-tests-with-github-actions/) o cualquier otro qué considere. Deberás hacer **steps** o **actions** sobre cada **job** para que se pueda obtener los siguiente:
 - **build**: únicamente realizar hasta la fase *compile* de *maven*, es prerrequisito de test.
 - **test**: realizar la fase de *verify* y responder ¿se puede lograr que se ejecute sin necesidad de compilar el proyecto?, es dependiente (**needs**) de build para ser ejecutada, y a su vez es prerrequisito par hacer deploy.
-- **deploy**: por ahora deberá imprimir en consola "En construcción ...", necesita (**needs**) que se haya ejecutado test antes de iniciar.
+- **deploy**: por ahora deberá imprimir en consola "En construcción ...", necesita (**needs**) que se haya ejecutado **test** antes de iniciar.
 3) Agregar los siguientes tests
 - Dado que tengo 1 empleado registrado, Cuando lo consulto a nivel de servicio, Entonces la consulta será exitosa validando el campo id.
 - Dado que no hay ningún empleado registrado, Cuándo lo consulto a nivel de servicio, Entonces la consulta no retornará ningún resultado.
