@@ -45,6 +45,7 @@ Para ver el conjunto de archivos y directorios creados por el comando `mvn` ejec
 ```sh
 $ tree
 ```
+En caso de que no funcione en git bash, otra herramienta que se puede usar es PowerShell ya que ésta maneja el comando "tree".
 
 En algunos sistemas operativos, este comando no funciona correctamente o puede requerir un parámetro (por ejemplo: `tree /f`). En caso que funcione, la
 salida muestra la estructura del proyecto, similar a como se muestra a continuación:
