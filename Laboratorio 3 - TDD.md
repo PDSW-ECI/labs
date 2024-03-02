@@ -18,6 +18,8 @@ Busque en internet el repositorio central de maven.
 Busque el artefacto JUnit y entre a la versión más nueva.
 <img width="588" alt="imagen" src="https://github.com/PDSW-ECI/labs/assets/4140058/5d18fa63-a6e4-40f9-af24-2589e8a3372e">
 
+**NOTA** Ingresar  directamente a [2. Junit](https://mvnrepository.com/artifact/junit/junit).  
+
 Ingrese a la pestaña de Maven y haga click en el texto de la dependencia para copiarlo al portapapeles.
 
 Edite el archivo pom.xml y realice las siguientes actualizaciones:
