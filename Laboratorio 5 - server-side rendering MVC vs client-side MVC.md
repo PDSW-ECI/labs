@@ -5,6 +5,7 @@
 ### PARTE I. - JUGANDO A SER UN CLIENTE HTTP
 El profesor lo guía en la clase:
 - Postman
+- telnet
 
 ### PARTE II. - CLIENT SIDE CON REACT
 El profesor lo guía en la clase:
