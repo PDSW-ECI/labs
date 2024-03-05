@@ -3,13 +3,58 @@
 #### INTRODUCCIÓN A PROYECTOS WEB
 
 ### PARTE I. - JUGANDO A SER UN CLIENTE HTTP
-El profesor lo guía en la clase:
+Usaremos las siguientes aplicaciones como cliente HTTP
 - Postman
-- telnet
+- Telnet
 
-### PARTE II. - CLIENT SIDE CON REACT
-El profesor lo guía en la clase:
+Abre la aplicación Postman, lo usaremos para hacer una solicitud a un servidor HTTP, al abrirlo indentifica qué controles de Postman corresponde a los elementos de entrada y salida de un servicio HTTP:
+
+<img width="803" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/49acba5d-2f26-4515-96e9-af7aa50f89d4">
+
+Has un request GET a la URL https://www.escuelaing.edu.co/es/ y verifica el body de respuesta en las opciones Pretty, Raw, Preview.
+
+Ahora has otro request GET al recurso https://dummyjson.com/todos, nuevamente verifica el body en varias opciones.
+
+Responde las siguientes preguntas:
+- ¿Qué pasa si no envío el método correcto?
+- ¿Qué pasa si al body response HTML lo fuerzo a leerse como JSON?
+- ¿Por qué el preview de HTML no se ve igual a cuando accedo a la URL en un navegador web?
+- ¿Qué pasa si le envías un body a una solicitud GET?
+
+Como parte del laboratorio en casa has los dos request anteriores pero ahora usando la herramienta Telnet, ya que esta no funciona adecuadamente en los equipos del laboratorio.
+
+### PARTE II. - CLIENT SIDE RENDERING CON REACT
+Para iniciar verifica que tengas alguna de estas herramientas:
 - NPM o YARN
+
+Verificando en terminal sería `$ npm init`
+
+La siguiente misión es ejecutar una aplicación react localmente:
+- Abre la aplicación https://codesandbox.io/s/react-js-simple-calculator-pefmr, loguéate con GitHub y juega cambiando los parámetros como colores y duplicando las líneas del archivo App.js con tags como `<ResultComponent ...>` en la función render.
+
+- ¿Qué hace cada uno de los archivos en la aplicación?
+.
+├── package.json
+├── public
+│   └── index.html
+└── src
+    ├── App.js
+    ├── components
+    │   ├── KeyPadComponent.js
+    │   └── ResultComponent.js
+    ├── index.js
+    └── styles.css
+
+- Después de haber visto los cambios, vuelve a abrir la URL original https://codesandbox.io/s/react-js-simple-calculator-pefmr y sigue los siguientes pasos:
+1) Descargar código en un Zip
+2) Descomprimir el Zip en la carpeta de proyectos de software, (en ciertos PC solo funciona 7-Zip)
+3) Abrir una terminal de Git Bash en la carpeta descomprimida
+4) Instalar las dependencias con `npm install`
+5) Iniciar la aplicación con `npm star`, en algunos computadores con versiones antiguas de nodejs hay que agregar `NODE_OPTIONS=--openssl-legacy-provider npm run start`
+6) Si te sale el Firewall dale click en cancelar
+7) Abrir la ruta http://localhost:3000/ en un navegador web como Firefox o Google Chrome
+
+Ahora, haz el request GET http://localhost:3000/ usando Postman, y revisa si el body de la respuesta es igual a alguno de los archivos del proyecto. Significa eso que es un recurso web dinámico o estático?
 
 ### PARTE III. - HACIENDO UNA APLICACIÓN WEB DINÁMICA USANDO EL PATRÓN MVC
 En este ejercicio, va a implementar una aplicación Web muy básica, haciendo uso de spring MVC.
@@ -21,6 +66,7 @@ Después de terminar el aprendizaje analice:
 - ¿Cuáles son las ventajas de usar MVC?
 - ¿Qué diferencia tiene la estructura de directorios de este proyecto comparado con las de proyectos pasados (con solo maven y java EE)?
 - ¿Qué anotaciones usaste y cuál es la diferencia entre ellas?
+- Ahora, haz el request GET http://localhost:8080/greeting usando Postman, y revisa si el body de la respuesta es igual a alguno de los archivos del proyecto. Significa eso que es un recurso web dinámico o estático?
 
 ### PARTE IV. - APLICACIÓN MVC PARA CONSUMO DE SERVICIO RESTful
 Usando la arquitectura MVC del punto anterior (el proyecto anterior), realice una aplicación simple qué permita navegar gráficamente sobre esta API
@@ -50,3 +96,4 @@ Analice las siguientes situaciones:
 - Una sección llamada “RESPUESTAS” colocar lasrespuestas a las preguntas:
 - Configurar el archivo .gitignore para excluir del repositorio los archivos no relevantes.
 - En una carpeta en la raiz del repositorio llamada diagrams y allí realizar un diagrama de clases del proyecto.
+
