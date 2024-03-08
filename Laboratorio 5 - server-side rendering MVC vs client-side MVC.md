@@ -22,7 +22,7 @@ Responde las siguientes preguntas:
 - ¿Qué pasa si le envías un body a una solicitud GET?
 
 Como parte del laboratorio en casa (ya que en los equipos del laboratorio está bloqueado) has los dos request anteriores pero ahora usando la herramienta Telnet sobre el puerto 80.
-Telnet soporta HTTP y no HTTPS, entonces ¿Qué significa la respuesta 301 cuándo usas telnet en el puerto 80?. Si quieres obtener una respuesta exitosa, podrías hacer solicitudes al servicio http://example.com/ 
+Telnet soporta HTTP y no HTTPS, entonces ¿Qué significa la respuesta 301 cuándo usas telnet en el puerto 80?. Si quieres obtener una respuesta exitosa, podrías hacer solicitudes al servicio HTTP http://example.com/ o usando openssl se pueden hacer request HTTPS https://www.bearfruit.org/thoughts/telnet-for-testing-ssl-https-websites/
 
 ### PARTE II. - CLIENT SIDE RENDERING CON REACT
 Para iniciar verifica que tengas alguna de estas herramientas:
