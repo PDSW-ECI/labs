@@ -21,7 +21,8 @@ Responde las siguientes preguntas:
 - ¿Por qué el preview de HTML no se ve igual a cuando accedo a la URL en un navegador web?
 - ¿Qué pasa si le envías un body a una solicitud GET?
 
-Como parte del laboratorio en casa haz los dos request anteriores pero ahora usando la herramienta Telnet, ya que esta no funciona adecuadamente en los equipos del laboratorio, ten en cuenta qué telnet soporta HTTP y no HTTPS.
+Como parte del laboratorio en casa (ya que en los equipos del laboratorio está bloqueado) has los dos request anteriores pero ahora usando la herramienta Telnet sobre el puerto 80.
+Telnet soporta HTTP y no HTTPS, entonces ¿Qué significa la respuesta 301 cuándo usas telnet en el puerto 80?. Si quieres obtener una respuesta exitosa, podrías hacer solicitudes al servicio http://example.com/ 
 
 ### PARTE II. - CLIENT SIDE RENDERING CON REACT
 Para iniciar verifica que tengas alguna de estas herramientas:
@@ -56,7 +57,7 @@ La siguiente misión es ejecutar una aplicación react localmente:
 6) Si te sale el Firewall dale click en cancelar
 7) Abrir la ruta http://localhost:3000/ en un navegador web como Firefox o Google Chrome
 
-Ahora, haz el request GET http://localhost:3000/ usando Postman, y revisa si el body de la respuesta es igual a alguno de los archivos del proyecto. Significa eso que es un recurso web dinámico o estático?
+Ahora, has el request GET http://localhost:3000/ usando Postman, y revisa si el body de la respuesta es igual a alguno de los archivos del proyecto. Significa eso que es un recurso web dinámico o estático?
 
 ### PARTE III. - HACIENDO UNA APLICACIÓN WEB DINÁMICA USANDO EL PATRÓN MVC
 En este ejercicio, va a implementar una aplicación Web muy básica, haciendo uso de spring MVC.
@@ -95,7 +96,7 @@ Analice las siguientes situaciones:
 ## ENTREGA
 - En un README.md colocar lo siguiente:
 - Una sección llamada “INTEGRANTES” y allícolocar el listado de los integrantes del taller (máximo 2).
-- Una sección llamada “RESPUESTAS” colocar lasrespuestas a las preguntas:
+- Una sección llamada “RESPUESTAS” colocar las respuestas a las preguntas.
 - Configurar el archivo .gitignore para excluir del repositorio los archivos no relevantes.
 - En una carpeta en la raiz del repositorio llamada diagrams y allí realizar un diagrama de clases del proyecto.
 
