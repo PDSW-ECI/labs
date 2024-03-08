@@ -21,18 +21,20 @@ Responde las siguientes preguntas:
 - ¿Por qué el preview de HTML no se ve igual a cuando accedo a la URL en un navegador web?
 - ¿Qué pasa si le envías un body a una solicitud GET?
 
-Como parte del laboratorio en casa has los dos request anteriores pero ahora usando la herramienta Telnet, ya que esta no funciona adecuadamente en los equipos del laboratorio.
+Como parte del laboratorio en casa (ya que en los equipos del laboratorio está bloqueado) has los dos request anteriores pero ahora usando la herramienta Telnet sobre el puerto 80.
+Telnet soporta HTTP y no HTTPS, entonces ¿Qué significa la respuesta 301 cuándo usas telnet en el puerto 80?. Si quieres obtener una respuesta exitosa, podrías hacer solicitudes al servicio http://example.com/ 
 
 ### PARTE II. - CLIENT SIDE RENDERING CON REACT
 Para iniciar verifica que tengas alguna de estas herramientas:
 - NPM o YARN
 
-Verificando en terminal sería `$ npm init`
+Verificando en terminal sería `$ npm --version`
 
 La siguiente misión es ejecutar una aplicación react localmente:
 - Abre la aplicación https://codesandbox.io/s/react-js-simple-calculator-pefmr, loguéate con GitHub y juega cambiando los parámetros como colores y duplicando las líneas del archivo App.js con tags como `<ResultComponent ...>` en la función render.
 
 - ¿Qué hace cada uno de los archivos en la aplicación?
+```
 .
 ├── package.json
 ├── public
@@ -44,17 +46,18 @@ La siguiente misión es ejecutar una aplicación react localmente:
     │   └── ResultComponent.js
     ├── index.js
     └── styles.css
+```
 
 - Después de haber visto los cambios, vuelve a abrir la URL original https://codesandbox.io/s/react-js-simple-calculator-pefmr y sigue los siguientes pasos:
 1) Descargar código en un Zip
 2) Descomprimir el Zip en la carpeta de proyectos de software, (en ciertos PC solo funciona 7-Zip)
 3) Abrir una terminal de Git Bash en la carpeta descomprimida
 4) Instalar las dependencias con `npm install`
-5) Iniciar la aplicación con `npm star`, en algunos computadores con versiones antiguas de nodejs hay que agregar `NODE_OPTIONS=--openssl-legacy-provider npm run start`
+5) Iniciar la aplicación con `npm start`, en algunos computadores con versiones antiguas de nodejs hay que agregar `NODE_OPTIONS=--openssl-legacy-provider npm run start`
 6) Si te sale el Firewall dale click en cancelar
 7) Abrir la ruta http://localhost:3000/ en un navegador web como Firefox o Google Chrome
 
-Ahora, haz el request GET http://localhost:3000/ usando Postman, y revisa si el body de la respuesta es igual a alguno de los archivos del proyecto. Significa eso que es un recurso web dinámico o estático?
+Ahora, has el request GET http://localhost:3000/ usando Postman, y revisa si el body de la respuesta es igual a alguno de los archivos del proyecto. Significa eso que es un recurso web dinámico o estático?
 
 ### PARTE III. - HACIENDO UNA APLICACIÓN WEB DINÁMICA USANDO EL PATRÓN MVC
 En este ejercicio, va a implementar una aplicación Web muy básica, haciendo uso de spring MVC.
@@ -93,7 +96,7 @@ Analice las siguientes situaciones:
 ## ENTREGA
 - En un README.md colocar lo siguiente:
 - Una sección llamada “INTEGRANTES” y allícolocar el listado de los integrantes del taller (máximo 2).
-- Una sección llamada “RESPUESTAS” colocar lasrespuestas a las preguntas:
+- Una sección llamada “RESPUESTAS” colocar las respuestas a las preguntas.
 - Configurar el archivo .gitignore para excluir del repositorio los archivos no relevantes.
 - En una carpeta en la raiz del repositorio llamada diagrams y allí realizar un diagrama de clases del proyecto.
 
