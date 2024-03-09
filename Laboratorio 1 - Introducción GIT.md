@@ -5,7 +5,7 @@ ESCUELA COLOMBIANA DE INGENIERÍA - CICLOS DE VIDA DE DESARROLLO DE SOFTWARE
 
 - En el presente laboratorio vamos a aprender los manejos basicos de Git Hub , esto con el proposito de que entiendas y comiences a trabajar con está herramienta. Para este laboratorio se trabajara con dos integrantes.
   
-## PARTE I. 
+## PARTE I(Trabajo Individual). 
 
 1.	Creamos un repositorio localmente 
 2.	Agregamos un archivo de ejemplo al repositorio, el **README.md** puede ser una gran opción.
@@ -38,19 +38,25 @@ ESCUELA COLOMBIANA DE INGENIERÍA - CICLOS DE VIDA DE DESARROLLO DE SOFTWARE
       git push "url repositorio"
     ```
 12.	Configuren el correo en git local de manera correcta
-    
-14.	Volver a subir los cambios y observar que todo esté bien
+     [Configurar correo electronico en GitHub](https://docs.github.com/es/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)
+14.	Vuelven a subir los cambios y observen que todo esté bien en el repositorio.
 
-## PARTE II
+## PARTE II(Trabajo de a parejas)
 
 1.	Se escogen los roles para trabajar en equipo
-2.	el owner agrega al colaborador con permisos de escritura en el repositorio que creó en la parte 1
-3.	el owner le comparte la url via Teams al colaborador
-4.	el colaborador acepta la invitación al repositorio
-5.	owner y colaborador editan el archivo README.md al mismo tiempo e intentan subir los cambios al mismo tiempo
-6.	la persona que perdió la competencia de subir los cambios, tiene que resolver los conflictos, qué los <<< === y >>> son normales en la resolución de conflictos, resolverlos manualmente
-7.	volver a repetir un cambio sobre el README.md ambos al tiempo para volver a tener conflictos
-8.	Enseñar como resolver los conflictos con IntelliJ
+   
+   ![image](https://github.com/PDSW-ECI/labs/assets/118181543/716464e4-d663-477d-a87d-0f2944e5b709)
+
+3.	El owner agrega al colaborador con permisos de escritura en el repositorio que creó en la parte 1
+   
+     [Invitar colaboradores a un repositorio personal](https://docs.github.com/es/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
+   
+5.	El owner le comparte la url via Teams al colaborador
+6.	El colaborador acepta la invitación al repositorio
+7.	Owner y Colaborador editan el archivo README.md al mismo tiempo e intentan subir los cambios al mismo tiempo.
+9.	la persona que perdió la competencia de subir los cambios, tiene que resolver los conflictos, qué los <<< === y >>> son normales en la resolución de conflictos, resolverlos manualmente
+10.	volver a repetir un cambio sobre el README.md ambos al tiempo para volver a tener conflictos
+11.	Enseñar como resolver los conflictos con IntelliJ
 
 
 ## PARTE III
