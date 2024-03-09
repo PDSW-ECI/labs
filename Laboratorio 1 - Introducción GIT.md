@@ -115,6 +115,10 @@ Y así protegimos nuestra rama principal , esto es más cuando trabajamos en par
 
 
 
+## ENTREGA
+- En un README.md colocar lo siguiente:
+- Una sección llamada “INTEGRANTES” y allí colocar el listado de los integrantes del taller (máximo 2).
+- Una sección llamada “RESPUESTAS” colocar las respuestas a las preguntas.
 
 
 
