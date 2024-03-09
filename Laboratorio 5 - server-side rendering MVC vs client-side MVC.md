@@ -57,6 +57,8 @@ La siguiente misión es ejecutar una aplicación react localmente:
 6) Si te sale el Firewall dale click en cancelar
 7) Abrir la ruta http://localhost:3000/ en un navegador web como Firefox o Google Chrome
 
+**NOTA**: Si se está utilizando PowerShell en lugar de Git Bash, reemplaze el comando del punto 5 por `$env:NODE_OPTIONS='--openssl-legacy-provider' ; npm run start`
+
 Ahora, has el request GET http://localhost:3000/ usando Postman, y revisa si el body de la respuesta es igual a alguno de los archivos del proyecto. Significa eso que es un recurso web dinámico o estático?
 
 ### PARTE III. - HACIENDO UNA APLICACIÓN WEB DINÁMICA USANDO EL PATRÓN MVC
