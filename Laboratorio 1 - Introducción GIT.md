@@ -53,15 +53,69 @@ ESCUELA COLOMBIANA DE INGENIERÍA - CICLOS DE VIDA DE DESARROLLO DE SOFTWARE
    
 5.	El owner le comparte la url via Teams al colaborador
 6.	El colaborador acepta la invitación al repositorio
-7.	Owner y Colaborador editan el archivo README.md al mismo tiempo e intentan subir los cambios al mismo tiempo.
-9.	la persona que perdió la competencia de subir los cambios, tiene que resolver los conflictos, qué los <<< === y >>> son normales en la resolución de conflictos, resolverlos manualmente
-10.	volver a repetir un cambio sobre el README.md ambos al tiempo para volver a tener conflictos
-11.	Enseñar como resolver los conflictos con IntelliJ
+8.	Owner y Colaborador editan el archivo README.md al mismo tiempo e intentan subir los cambios al mismo tiempo.
+9.	¿Que sucedio?
+10.	La persona que perdió la competencia de subir los cambios, tiene que resolver los conflictos, qué los <<< === y >>> (son normales en la resolución de conflictos), resolverlos manualmente.
+         [Como resolver Conflictos GitHub](https://docs.github.com/es/enterprise-cloud@latest/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
+         
+12.	Volver a repetir un cambio sobre el README.md ambos al tiempo para volver a tener conflictos.
+   
+13.	Resuelvan el conflcito con IntelliJ si es posible ,  [Resolver conflictos en IntelliJ]( https://www.jetbrains.com/help/idea/resolving-conflicts.html#distributed-version-control-systems)
 
 
-## PARTE III
-1.	¿hay una mejor forma de trabajar con git para no tener conflictos? sí, a través de trabajo en ramas y PR
-2.	explicar cómo crear un rama y subir esos cambios a la nueva rama
-3.	Tanto owner como colaborador hacen un cambio en el README.md y hacen un Pull Request (PR) a la rama main/master, resolver conflictos con github
-4.	recomendación trabajar en equipo y distribuirse de mejor manera quien va a modificar qué, para evitar modificar los mismos archivos al mismo tiempo, si no se editan los mismos archivos la resolución de conflictos es automática
-5.	mezclar los cambios a la rama main a través de PR con el check/approval del compañerocuando se hace merge se deberían borrar las ramas en github
+## PARTE III(Trabajo de a parejas)
+1.	¿Hay una mejor forma de trabajar con git para no tener conflictos?
+2.	¿Qué es y como funciona el **Pull Request**?.
+3.	Creen una rama cada uno y suban sus cambios
+   
+   ![image](https://github.com/PDSW-ECI/labs/assets/118181543/e558ac3b-f5d8-443a-8958-aacdedef7f94)
+  	![image](https://github.com/PDSW-ECI/labs/assets/118181543/074eacc9-6284-4a41-9805-c9e30a169e5d)
+  	![image](https://github.com/PDSW-ECI/labs/assets/118181543/5c664e91-d3a3-4b56-867b-3b06d9ffce72)
+
+6.	Tanto owner como colaborador hacen un cambio en el README.md y hacen un Pull Request (PR) a la rama main/master
+   
+   [Pull Request - GitHub](https://docs.github.com/es/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+   
+**Recomendación, deben trabajar en equipo y distribuirse de mejor manera quien va a modificar qué, para evitar modificar los mismos archivos al mismo tiempo, si no se editan los mismos archivos la resolución de conflictos es automática**
+
+9.	Teniendo en cuenta la recomendación , mezclen los cambios a la rama main a través de PR con el check/approval del otro compañero (Cuando se hace merge se deberían borrar las ramas en github)
+
+***Como Borrar Ramas despues de un Pull Request***
+
+Se dirigen a la configuración de su repositorio:
+
+![image](https://github.com/PDSW-ECI/labs/assets/118181543/859fb07c-5748-4b8e-91f4-2f5ee7229f90)
+
+Y en general
+
+![image](https://github.com/PDSW-ECI/labs/assets/118181543/a2bc8b9d-4200-472e-a712-56498b0f59b3)
+
+Se dirigen al final  en el área del pull requests y seleccionan “ Automatically delete head branches”
+
+![image](https://github.com/PDSW-ECI/labs/assets/118181543/838f51a7-6b2c-4673-9a60-65fe11a75647)
+
+***Aprobación Pull Request***
+
+Nos dirigimos (todavía en configuraciones ) a Branches , en está visualizaran donde daremos protección de nuestras ramas  , seleccionamos Add rule
+
+![image](https://github.com/PDSW-ECI/labs/assets/118181543/7104fcaa-c1dd-4345-a8d0-d6a4f531de79)
+
+Aquí damos el nombre de nuestra rama (Verificar el nombre tal cual lo tenemos en nuestro repositorio)y seleccionamos la primera opción como se muestra , así estamos requiriendo que cuando se haga ese pull request en nuestra rama se necesita aprobación de otro compañero
+
+![image](https://github.com/PDSW-ECI/labs/assets/118181543/0631402e-6210-4b8a-a040-de594455e3b0)
+
+Vamos al final y damos en Create
+
+![image](https://github.com/PDSW-ECI/labs/assets/118181543/7e878bd7-8b68-4403-af98-380700d81459)
+
+Y así protegimos nuestra rama principal , esto es más cuando trabajamos en parejas o en equipos , deberían tener un mensaje final que se vea así
+
+![image](https://github.com/PDSW-ECI/labs/assets/118181543/1e39b81c-82c8-4fec-b2e6-b339c782b6ad)
+
+
+
+
+
+
+
+   
