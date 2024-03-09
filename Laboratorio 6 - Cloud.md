@@ -8,7 +8,7 @@
 2) Crea un budget de 1 dólar para la cuenta
 3) El profesor guía el resto de pasos
 
-# Parte II - Despliegue app web spring MVC (o spring-boot)
+# Parte II - Despliegue app web spring MVC (o spring-boot backend)
 1) Inicie [Azure Cloud Shell](https://docs.microsoft.com/en-in/azure/cloud-shell/overview) desde el portal. Para implementar en un grupo de recursos, ingrese el siguiente comando
 ```shell
 az group create --name MyResourceGroup --location westus
@@ -72,8 +72,7 @@ String conStr = System.getenv("MYSQLCONNSTR_MyDatabase");
 Ahora ha instalado y configurado todos los recursos necesarios para implementar y ejecutar la aplicación MyApplication.
 
 ## Ejercicio 3: implementar los cambios en la aplicación web
-1) Conectate con un cliente FTP y sube el jar de la aplicación Java
+1) Conectate con un cliente FTP y sube el jar de la aplicación Java https://github.com/PDSW-ECI/spring-mvc-with-bootstrap
 
 ## Entrega
-- El enlace de la aplicación desplegada en Azure
-
+- El enlace de la aplicación React y Spring MVC desplegada en Azure
