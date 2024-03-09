@@ -3,28 +3,28 @@ ESCUELA COLOMBIANA DE INGENIERÍA - CICLOS DE VIDA DE DESARROLLO DE SOFTWARE
 
  ![image](https://github.com/PDSW-ECI/labs/assets/118181543/7b7bba48-cbfb-4327-bec8-f72dc0d258e0)
 
-- En el presente laboratorio vamos a aprender los manejos basicos de Git Hub , esto con el proposito de que entiendas y comiences a trabajar con está herramienta. Para este laboratorio se trabajara con dos integrantes.
+- En el presente laboratorio vamos a aprender los manejos básicos de Git Hub, esto con el propósito de que entiendas y comiences a trabajar con esta herramienta. Para este laboratorio se trabajará con dos integrantes.
   
-## PARTE I(Trabajo Individual). 
+## PARTE I (Trabajo Individual). 
 
 1.	Creamos un repositorio localmente 
 2.	Agregamos un archivo de ejemplo al repositorio, el **README.md** puede ser una gran opción.
-3.	Averiguen para que funcionan y como se usan estos comandos **git add y git commit -m “mensaje”**
-4.	Abran cada uno una cuenta de github, si ya la tienen, enlazenla con el correo institucional
+3.	Averigüen para qué funcionan y como se usan estos comandos **git add y git commit -m “mensaje”**
+4. Abran cada uno una cuenta de github, si ya la tienen, enlácenla con el correo institucional
    
-       [Como enlazar correos en GitHub](https://docs.github.com/es/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account)
+   [Como enlazar correos en GitHub](https://docs.github.com/es/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account)
    
-6.	Creen un repositorio en blanco
+5.	Creen un repositorio en blanco
 
 ![image](https://github.com/PDSW-ECI/labs/assets/118181543/0a6db4de-3682-4e43-838c-415373596947)
 ![image](https://github.com/PDSW-ECI/labs/assets/118181543/7c1cafdf-9a35-4180-99c4-8cabd84d21b8)
 
    
-8.	Configuren el repositorio local con el repositorio remoto.
+6.	Configuren el repositorio local con el repositorio remoto.
 
       [Como subir un proyecto local a github.](https://gist.github.com/cgonzalezdai/cc33db72a6fe5178637aabb562eae35c)
   
-10.	Subir los cambios, teniendo en cuenta lo que averiguaron en el punto 3
+7.	Subir los cambios, teniendo en cuenta lo que averiguaron en el punto 3
     Utilicen los siguientes comando en el directorio donde tienen su proyecto , en este orden:
    	```
       git add .
@@ -37,50 +37,51 @@ ESCUELA COLOMBIANA DE INGENIERÍA - CICLOS DE VIDA DE DESARROLLO DE SOFTWARE
     ```
       git push "url repositorio"
     ```
-12.	Configuren el correo en git local de manera correcta
+8.	Configuren el correo en git local de manera correcta
      [Configurar correo electronico en GitHub](https://docs.github.com/es/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)
-14.	Vuelven a subir los cambios y observen que todo esté bien en el repositorio.
+9.	Vuelven a subir los cambios y observen que todo esté bien en el repositorio.
 
-## PARTE II(Trabajo de a parejas)
+## PARTE II (Trabajo de a parejas)
 
 1.	Se escogen los roles para trabajar en equipo
    
    ![image](https://github.com/PDSW-ECI/labs/assets/118181543/716464e4-d663-477d-a87d-0f2944e5b709)
 
-3.	El owner agrega al colaborador con permisos de escritura en el repositorio que creó en la parte 1
+2.	El owner agrega al colaborador con permisos de escritura en el repositorio que creó en la parte 1
    
      [Invitar colaboradores a un repositorio personal](https://docs.github.com/es/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
    
-5.	El owner le comparte la url via Teams al colaborador
-6.	El colaborador acepta la invitación al repositorio
-8.	Owner y Colaborador editan el archivo README.md al mismo tiempo e intentan subir los cambios al mismo tiempo.
-9.	¿Que sucedio?
-10.	La persona que perdió la competencia de subir los cambios, tiene que resolver los conflictos, qué los <<< === y >>> (son normales en la resolución de conflictos), resolverlos manualmente.
+3.	El owner le comparte la url via Teams al colaborador
+4.	El colaborador acepta la invitación al repositorio
+5.	Owner y Colaborador editan el archivo README.md al mismo tiempo e intentan subir los cambios al mismo tiempo.
+6.	¿Que sucedio?
+7.	La persona que perdió la competencia de subir los cambios, tiene que resolver los conflictos, qué los <<< === y >>> (son normales en la resolución de conflictos), resolverlos manualmente.
          [Como resolver Conflictos GitHub](https://docs.github.com/es/enterprise-cloud@latest/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
          
-12.	Volver a repetir un cambio sobre el README.md ambos al tiempo para volver a tener conflictos.
+8.	Volver a repetir un cambio sobre el README.md ambos al tiempo para volver a tener conflictos.
    
-13.	Resuelvan el conflcito con IntelliJ si es posible ,  [Resolver conflictos en IntelliJ]( https://www.jetbrains.com/help/idea/resolving-conflicts.html#distributed-version-control-systems)
+9.	Resuelvan el conflicto con IntelliJ si es posible ,  [Resolver conflictos en IntelliJ]( https://www.jetbrains.com/help/idea/resolving-conflicts.html#distributed-version-control-systems)
 
 
-## PARTE III(Trabajo de a parejas)
+## PARTE III (Trabajo de a parejas)
 1.	¿Hay una mejor forma de trabajar con git para no tener conflictos?
-2.	¿Qué es y como funciona el **Pull Request**?.
+2.	¿Qué es y como funciona el **Pull Request**?
 3.	Creen una rama cada uno y suban sus cambios
    
    ![image](https://github.com/PDSW-ECI/labs/assets/118181543/e558ac3b-f5d8-443a-8958-aacdedef7f94)
   	![image](https://github.com/PDSW-ECI/labs/assets/118181543/074eacc9-6284-4a41-9805-c9e30a169e5d)
   	![image](https://github.com/PDSW-ECI/labs/assets/118181543/5c664e91-d3a3-4b56-867b-3b06d9ffce72)
 
-6.	Tanto owner como colaborador hacen un cambio en el README.md y hacen un Pull Request (PR) a la rama main/master
+4.	Tanto owner como colaborador hacen un cambio en el README.md y hacen un Pull Request (PR) a la rama main/master
    
-   [Pull Request - GitHub](https://docs.github.com/es/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+     [Pull Request - GitHub](https://docs.github.com/es/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+  	
    
-**Recomendación, deben trabajar en equipo y distribuirse de mejor manera quien va a modificar qué, para evitar modificar los mismos archivos al mismo tiempo, si no se editan los mismos archivos la resolución de conflictos es automática**
+ **(Recomendación : deben trabajar en equipo y distribuirse de mejor manera quien va a modificar qué, para evitar modificar los mismos archivos al mismo tiempo, si no se editan los mismos archivos la resolución de conflictos es automática)**
 
-9.	Teniendo en cuenta la recomendación , mezclen los cambios a la rama main a través de PR con el check/approval del otro compañero (Cuando se hace merge se deberían borrar las ramas en github)
+5.	Teniendo en cuenta la recomendación , mezclen los cambios a la rama main a través de PR con el check/approval del otro compañero (Cuando se hace merge se deberían borrar las ramas en github)
 
-***Como Borrar Ramas despues de un Pull Request***
+***Como Borrar Ramas después de un Pull Request***
 
 Se dirigen a la configuración de su repositorio:
 
@@ -96,7 +97,7 @@ Se dirigen al final  en el área del pull requests y seleccionan “ Automatical
 
 ***Aprobación Pull Request***
 
-Nos dirigimos (todavía en configuraciones ) a Branches , en está visualizaran donde daremos protección de nuestras ramas  , seleccionamos Add rule
+Nos dirigimos (todavía en configuraciones ) a Branches ,en esta visualizarán donde daremos protección de nuestras ramas  , seleccionamos Add rule
 
 ![image](https://github.com/PDSW-ECI/labs/assets/118181543/7104fcaa-c1dd-4345-a8d0-d6a4f531de79)
 
