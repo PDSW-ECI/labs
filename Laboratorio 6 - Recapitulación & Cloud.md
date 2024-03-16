@@ -19,7 +19,7 @@ az appservice plan create --resource-group MyResourceGroup --name MyPlan --sku F
 ```
 3) Finalmente, cree el servidor MySQL con un nombre de servidor único.
 ```shell
-az mysql server create --resource-group MyResourceGroup --name mysqldbserver --admin-user mysqldbuser --admin-password P2ssw0rd@123 --sku-name Standard_B1ms
+az mysql flexible-server create --resource-group MyResourceGroup --name mysqldbserver --admin-user mysqldbuser --admin-password P2ssw0rd@123 --sku-name B_Standard_B1ms
 ```
 > Importante: Introduzca un nombre de servidor SQL único. Dado que el nombre de Azure SQL Server no admite las convenciones de nomenclatura de mayúsculas y minúsculas UPPER / Camel , utilice minúsculas para el valor del campo Nombre del servidor de base de datos. 
 4) Navegue hasta el grupo de recursos que ha creado. Debería ver un servidor **Azure Database for MySQL server** aprovisionado. Seleccione el servidor de base de datos.
