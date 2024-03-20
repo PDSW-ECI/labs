@@ -1,4 +1,4 @@
-# Despliega mi primera aplicación en Azure
+<img width="840" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/d2f94c55-6050-4135-b0b0-e8fb72c5db83"># Despliega mi primera aplicación en Azure
 
 ## Mi primer despliegue en la nube
 
@@ -85,6 +85,8 @@ Ejemplo conexión Cyberduck:
 <img width="837" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/0d419624-d114-4e1f-8a4f-9b92c0ce3d9f">
 <img width="602" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/2da21022-57b9-4ba5-8eda-be602fc5b2d2">
 
+Configuración necesaria para acceder a FTP:
+<img width="840" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/5dbb25b3-8135-4715-b5f3-e6b0d939c08e">
 
 ## Entrega
 - El enlace de la aplicación React y Spring MVC desplegada en Azure
