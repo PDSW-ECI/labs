@@ -1,4 +1,4 @@
-<img width="840" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/d2f94c55-6050-4135-b0b0-e8fb72c5db83"># Despliega mi primera aplicación en Azure
+# Despliega mi primera aplicación en Azure
 
 ## Mi primer despliegue en la nube
 
