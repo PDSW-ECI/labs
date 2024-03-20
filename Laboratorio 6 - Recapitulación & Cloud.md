@@ -74,5 +74,17 @@ Ahora ha instalado y configurado todos los recursos necesarios para implementar 
 ## Ejercicio 3: implementar los cambios en la aplicación web
 1) Conectate con un cliente FTP y sube el jar de la aplicación Java https://github.com/PDSW-ECI/spring-mvc-with-bootstrap, sigue este tutorial https://learn.microsoft.com/en-us/azure/app-service/deploy-ftp?tabs=portal
 
+Configuración del servicio FTP:
+<img width="1495" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/05f5d912-717b-497a-b58c-468368107219">
+
+Ejemplo conexión Filezilla:
+<img width="1059" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/c12f8be9-38dc-4906-a53b-d69d8cfe4016">
+<img width="1201" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/855db5f1-e2b2-4f9d-b3b8-77e1d90afa4a">
+
+Ejemplo conexión Cyberduck:
+<img width="837" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/0d419624-d114-4e1f-8a4f-9b92c0ce3d9f">
+<img width="602" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/2da21022-57b9-4ba5-8eda-be602fc5b2d2">
+
+
 ## Entrega
 - El enlace de la aplicación React y Spring MVC desplegada en Azure
