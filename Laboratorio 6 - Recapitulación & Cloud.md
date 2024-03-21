@@ -67,11 +67,20 @@ jdbc:mysql://{MySQL Server Name}:3306/alm?useSSL=true&requireSSL=false&autoRecon
 - su contraseña: valor que proporcionó durante la creación del servidor de base de datos MySQL.
 
 7) Haga clic en Guardar para guardar la cadena de conexión.
-> Nota: Las cadenas de conexión configuradas aquí estarán disponibles como variables de entorno, con el prefijo del tipo de conexión para aplicaciones Java (también para aplicaciones PHP, Python y Node). En el archivo DataAccess.java en la carpeta src/main/java/com/microsoft/example, recuperamos la cadena de conexión usando el siguiente código
+> Nota: Las cadenas de conexión configuradas aquí estarán disponibles como variables de entorno, con el prefijo del tipo de conexión para aplicaciones Java (también para aplicaciones PHP, Python y Node). En el archivo src/main/resources/application.properties, recuperamos la cadena de conexión reemplazando el siguiente código:
 ```java
-String conStr = System.getenv("MYSQLCONNSTR_MyDatabase");
+# ORM
+# next line deletes the database on startup or shutdown
+# spring.jpa.hibernate.ddl-auto=create-drop
+# next line updates the database on startup
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=${MYSQLCONNSTR_MyDatabase}
+#spring.datasource.username=
+#spring.datasource.password=
+spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
+spring.jpa.show-sql=true
 ```
-Ahora ha instalado y configurado todos los recursos necesarios para implementar y ejecutar la aplicación MyApplication.
+Ahora ha instalado y configurado todos los recursos necesarios para implementar y ejecutar la aplicación.
 
 ## Ejercicio 3: implementar los cambios en la aplicación web
 1) Conectate con un cliente FTP y sube el jar de la aplicación Java https://github.com/PDSW-ECI/spring-mvc-with-bootstrap, sigue este tutorial https://learn.microsoft.com/en-us/azure/app-service/deploy-ftp?tabs=portal
