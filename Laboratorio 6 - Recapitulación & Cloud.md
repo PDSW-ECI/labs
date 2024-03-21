@@ -75,8 +75,8 @@ jdbc:mysql://{MySQL Server Name}:3306/alm?useSSL=true&requireSSL=false&autoRecon
 # next line updates the database on startup
 spring.jpa.hibernate.ddl-auto=update
 spring.datasource.url=${MYSQLCONNSTR_MyDatabase}
-#spring.datasource.username=
-#spring.datasource.password=
+#spring.datasource.username=root
+#spring.datasource.password=my-secret-pw
 spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
 spring.jpa.show-sql=true
 ```
