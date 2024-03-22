@@ -39,8 +39,6 @@ az mysql flexible-server create --resource-group MyResourceGroup --name pongaunn
 A continuación, navegue hasta la aplicación web que ha creado. Mientras implementa una aplicación Java, debe cambiar el contenedor web de la aplicación web a Apache Tomcat.
 1) Seleccione **Configuration**. Establezca **Stack settings** como se muestra en la imagen a continuación y haga clic en Guardar.
 
-<img width="735" alt="image" src="https://github.com/PDSW-ECI/labs/assets/4140058/803a49a2-91fa-4122-8e43-6759717ed90b">
-
 ![image](https://github.com/PDSW-ECI/labs/assets/4140058/2941dc04-5d50-4a71-a0ae-3e005397ab8f)
 
 2) Seleccione Overview y click en Browse.
